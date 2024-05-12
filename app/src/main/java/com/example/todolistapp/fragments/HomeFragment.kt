@@ -56,10 +56,10 @@ class HomeFragment : Fragment(R.layout.fragment_home),SearchView.OnQueryTextList
     private fun updateUI(note:List<Note>?){
         if (note!=null){
             if (note.isNotEmpty()){
-                binding.emptyNotesImage.visibility=View.GONE
+                binding.imageView.visibility=View.GONE
                 binding.homeRecyclerView.visibility=View.VISIBLE
             }else{
-                binding.emptyNotesImage.visibility=View.VISIBLE
+                binding.imageView.visibility=View.VISIBLE
                 binding.homeRecyclerView.visibility=View.GONE
             }
         }

@@ -21,7 +21,7 @@
             android:layout_marginTop="16dp"
             android:fontFamily="@font/poppins"
             android:text="@string/add_note"
-            android:textColor="@color/white"
+            android:textColor="@color/blue"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -36,6 +36,8 @@
             android:hint="@string/add_title"
             android:maxLines="1"
             android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:textSize="20sp" />
 
         <EditText
@@ -45,10 +47,14 @@
             android:layout_below="@id/addNoteTitle"
             android:layout_marginTop="12dp"
             android:background="@drawable/border"
+            android:filterTouchesWhenObscured="true"
             android:fontFamily="@font/poppins"
             android:gravity="top"
             android:hint="@string/add_task"
             android:padding="12dp"
+            android:shadowColor="@color/blue"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:textSize="18sp" />
     </RelativeLayout>
 </layout>

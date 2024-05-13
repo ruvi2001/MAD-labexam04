@@ -21,7 +21,7 @@
             android:layout_marginTop="16dp"
             android:fontFamily="@font/poppins"
             android:text="Edit Note."
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -36,6 +36,8 @@
             android:hint="Add title"
             android:maxLines="1"
             android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:textSize="20sp" />
 
         <EditText
@@ -49,6 +51,8 @@
             android:gravity="top"
             android:hint="Add task"
             android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:textSize="18sp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton

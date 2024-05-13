@@ -7,33 +7,35 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
-        android:backgroundTint="@color/white"
+        android:background="@color/blue"
+        android:backgroundTint="#202B7C"
         tools:context=".HomeFragment">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="400dp"
             android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
-
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="148dp"
-                android:layout_height="50dp"
-                android:layout_weight="1"
-
-                tools:srcCompat="@drawable/tick" />
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="250dp"
                 android:layout_height="50dp"
-                android:text="To Do List"
-                android:textColor="@color/blue"
-                android:textSize="24sp"
+                android:text="@string/to_do_list"
+                android:textColor="@color/white"
+                android:textSize="48sp"
                 android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:src="@drawable/tick" />
+
         </LinearLayout>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -42,7 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="28dp"
-            android:backgroundTint="@color/blue"
+            android:backgroundTint="@color/black"
             android:clickable="true"
             android:contentDescription="image"
             android:tintMode="@color/white"
